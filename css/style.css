@@ -106,18 +106,27 @@ main {
   font-size: 14px;
 }
 
-/* main styles end */
-
 /* video-part styles start */
 
+.Sec-2 {
+  display: flex;
+  justify-content: center;
+}
+
 .video-part {
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .video-part h2 {
+  margin-top: 120px;
   color: #6e42ff;
-  margin: 30px;
-  text-align: center;
+}
+
+.video-part h2 .fas {
+  color: darkred;
+  margin-left: 40px;
+  font-size: 30px;
 }
 
 /* video-part styles end */
@@ -186,13 +195,31 @@ footer {
     height: 44px;
     padding: 10px, 24px, 10px, 24px;
   }
+
   .players {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 47px;
   }
+
+  .video-part {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .video-part h2 {
+    margin-top: 0px;
+  }
+
+  .video-part h2 .fas {
+    display: none;
+  }
+
   .video-part iframe {
     width: 300px;
+    margin-top: 30px;
   }
+
   .footer-items img {
     width: 360px;
     height: 80px;
@@ -208,6 +235,7 @@ footer {
   .head-container {
     width: 100%;
   }
+
   .head-title {
     width: 300px;
     height: 150px;
@@ -235,7 +263,20 @@ footer {
   }
 
   .video-part iframe {
-    width: 700px;
+    width: 350px;
+  }
+
+  .video-part h2 {
+    margin-top: 120px;
+    margin-left: 30px;
+    color: #6e42ff;
+  }
+
+  .video-part h2 .fas {
+    color: darkred;
+    margin-top: 30px;
+    margin-left: 150px;
+    font-size: 60px;
   }
 }
 
