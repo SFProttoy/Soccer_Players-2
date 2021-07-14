@@ -24,19 +24,10 @@ header {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* .head-left {
-  position: relative;
-} */
-
-/* .head-right {
-}  */
-
 .head-title {
   width: 485px;
   height: 230px;
   margin-top: 90px;
-  /* margin-left: 156px;
-  margin: 207px 102px 240px 156px; */
   font-size: 64px;
   line-height: 80px;
   color: white;
@@ -49,8 +40,6 @@ header {
   height: 44px;
   color: whitesmoke;
   background-color: #e02c6d;
-
-  /* margin: 207px 102px 240px 156px; */
   padding: 10px 24px;
   transition: background-color 0.5s ease, color 0.5s linear,
     transform 0.5s ease-out;
@@ -69,12 +58,12 @@ header {
 .head-right img {
   width: 556px;
   height: 438px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-/* header style end */
+/* header styles end */
 
-/* main style start */
+/* main styles start */
 
 main {
   display: flex;
@@ -82,6 +71,8 @@ main {
   align-items: center;
   background-color: azure;
 }
+
+/* players styles start */
 
 .players {
   display: grid;
@@ -115,6 +106,10 @@ main {
   font-size: 14px;
 }
 
+/* main styles end */
+
+/* video-part styles start */
+
 .video-part {
   margin-bottom: 40px;
 }
@@ -125,7 +120,11 @@ main {
   text-align: center;
 }
 
-/* Footer styles */
+/* video-part styles end */
+
+/* main styles end */
+
+/* Footer styles start */
 
 footer {
   margin-top: 40px;
@@ -147,12 +146,21 @@ footer {
   margin-bottom: 20px;
 }
 
+.footer-items .fab {
+  padding: 5px;
+  font-size: 20px;
+}
+
 .footer-items h4 {
   margin-bottom: 96px;
   font-size: 18px;
 }
 
+/* Footer styles end */
+
 /* Applying Media query */
+
+/* Mobiles  start*/
 
 @media only screen and (max-width: 688px) {
   .head-container {
@@ -188,20 +196,13 @@ footer {
   .footer-items img {
     width: 360px;
     height: 80px;
+    margin-right: 20px;
   }
 
-  /* .footer-items span {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-items h4 {
-    margin-bottom: 96px;
-    font-size: 18px;
-  } */
+  /* Mobiles end */
 }
 
-/* Tablets */
+/* Tablets  start*/
 
 @media only screen and (min-width: 688px) and (max-width: 991px) {
   .head-container {
@@ -237,3 +238,5 @@ footer {
     width: 700px;
   }
 }
+
+/* Tablets end */
